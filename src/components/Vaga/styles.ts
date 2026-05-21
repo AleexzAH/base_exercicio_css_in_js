@@ -12,6 +12,12 @@ export const ListaVagaC = styled.li`
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
   }
+
+  &:hover a {
+    border-color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+  }
 `
 export const VagaTitulo = styled.h3`
   font-weight: bold;
@@ -29,12 +35,6 @@ export const VagaLink = styled.a`
   font-size: 14px;
   border-radius: 8px;
   text-align: center;
-
-  &:hover {
-    border-color: var(--cor-principal);
-    background-color: var(--cor-secundaria);
-    color: var(--cor-principal);
-  }
 
   @media (max-width: 768px) {
     display: block;
